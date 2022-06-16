@@ -1,0 +1,21 @@
+.about .facility{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about .facility .box_container{
+    display: flex;
+    margin: 20px 0;
+}
+
+.about .facility .box_container .box{
+    width: 25%;
+}
+.about .facility .box_container .box img{
+    width: 40%;
+}
+.box_container .box h3{
+    font-size: 25px;
+    margin: 20px 0;
+}

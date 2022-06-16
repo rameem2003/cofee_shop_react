@@ -1,0 +1,43 @@
+header{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    background-color: white;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header img{
+    width: 30%;
+}
+header nav{
+    margin-left: auto;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    text-decoration: none;
+    padding: 0 12px;
+    display: block;
+    font-size: 20px;
+    color: black;
+}
+header nav ul li a:hover{
+    color: #be9c79;
+    text-decoration: underline;
+}
+
+header #menu_btn{
+    display: none;
+    font-size: 25px;
+    color: black;
+}
