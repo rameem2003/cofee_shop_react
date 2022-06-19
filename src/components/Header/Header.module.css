@@ -36,8 +36,39 @@ header nav ul li a:hover{
     text-decoration: underline;
 }
 
-header #menu_btn{
+header .menu_btn{
     display: none;
     font-size: 25px;
     color: black;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    header .container nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: 0.5s linear;
+    }
+    header .container nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .container nav ul li{
+        display: block;
+        margin: 20px 0;
+    }
+
+    header .menu_btn{
+        display: inline-block;
+        transition: 0.5s;
+    }
+
+    header .menu_btn.fa-times{
+        transform: rotate(180deg);
+    }
 }

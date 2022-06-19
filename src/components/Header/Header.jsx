@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './Header.module.css';
 import logo from '../../assets/images/logo.png';
+import './menu';
 
 function Header() {
   return (
@@ -19,7 +20,7 @@ function Header() {
                 </ul>
             </nav>
 
-            <i id="menu_btn" className="fa-solid fa-bars"></i>
+            <i className={['fa-solid fa-bars', classes.menu_btn].join(" ")}></i>
         </div>
     </header>
   )
